@@ -1,0 +1,17 @@
+After downloading run this command to start Zookeeper
+C:\kafka>.\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
+
+Run this command by going to the path 
+C:\kafka>.\bin\windows\kafka-server-start.bat .\config\server.properties
+
+Run this command to create topic by going to path
+C:\kafka\bin\windows>kafka-topics.bat --create --topic programmatictopic --bootstrap-server localhost:9092
+
+Run this command to get the list of topic 
+C:\kafka\bin\windows>kafka-topics.bat --list --bootstrap-server localhost:9092
+
+Run this command to produce some data
+C:\kafka>.\bin\windows\kafka-console-producer.bat --broker-list localhost:9092 --topic tutorialspedia
+
+Run this command to consume  after gng into the path
+C:\kafka>.\bin\windows\kafka-console-consumer -bootstrap-server localhost:9092 -topic programmatictopic
